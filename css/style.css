@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: "Pacifico", cursive;
+    font-size: 1.2em;
+}
+body {
+     background-color: azure;
+}
+
+header {
+    background-color: aqua;
+    text-align: center ;
+    padding: 20px 0;
+}
+footer {
+    background-color: aqua;
+    padding: 10px 50px;
+}
+.about {
+    background-color: rgb(185, 146, 146);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+}
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: darkred;
+    text-transform: uppercase;
+    text-decoration: line-through;
+}
+p {
+    font-size: 1,25rem;
+    line-height: 2rem;
+}
+.avatar {
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+.articles {
+    padding: 20px 50px;
+}
+.content {
+    padding: 20px 50px;
+}
+/*
+.about a {
+    color: brown;
+} 
+*/
+.articles a{
+    color: crimson;
+}
+a:link {
+    color: blue;
+    text-decoration: none;
+}
+a:visited {
+    color: khaki;
+}
+a:focus {
+    color: blueviolet;
+}
+a:hover {
+    color: green;
+    text-decoration: underline;
+}
+/*
+.articles a:hover {
+    color: aquamarine;
+}
+*/
+a:active {
+color: magenta;
+}
+.page-list li:first-child { 
+    background-color: blueviolet;
+}
+.page-list li:last-child { 
+    background-color: rgb(38, 186, 212);
+}
+.page-list li:nth-child(even) { 
+    background-color: rgb(61, 40, 151);
+}
+/*
+1	1	Первый элемент, является синонимом псевдокласса :first-child.
+5	5	Пятый элемент.
+even	2, 4, 6, 8, 10,…	Все чётные элементы.s
+odd	1, 3, 5, 7, 9,…	Все нечётные элементы.
+*/
+.page-list li:nth-child(3) { 
+    background-color: rgb(18, 7, 68);
+}
+/*
+after - после текста before - до текста
+*/
+h2::before{
+    content: "new";
+    font-size: 10ph;
+    margin-left: 10px;
+    color: black;
+}
+.gayben1 {
+    border-radius: 20px;
+}
+.gayben2 {
+    border-radius: 20px;
+    box-shadow: 30px 20px 50px;
+}
+.gayben3{
+    border-width: 4px double black;
+    border-color: black;
+    border-style: dashed;
+    padding: 10px;
+}
+.dt1{
+    color: black;
+}
+.dt2 {
+    color: black;
+}
+
+.table-example{
+    border-collapse: collapse;
+    border: 5px solid gray;  
+}
+.table-example td, 
+.table-example th{
+border: 2px solid black;
+padding: 10px 20px;
+}
+
+/* Столбцы */   
+.table-example td:nth-child(even){ 
+color: blue ;
+font-weight: bold;
+}
+
+/* Строки */
+.table-example tr:nth-child(odd){
+    background-color: aqua;
+    border-bottom: 1px solid blueviolet;
+}
+.table-example tr:nth-child(odd)td{
+    border-bottom: 2px solid blueviolet;
+}
+#form-example{
+    width: 300px;
+    margin: 20px auto;
+}
+#form-example input[type="submit"]{
+    background-color: brown;
+    border: 1px darkblue solid;
+    padding: 7px 15px;
+    color: darkblue;
+    border-radius: 5px;
+}
+#form-example input[type="sumbit"]:hover{
+    background-color: blue;
+    border-radius: 7px;
+}
+#form-example input[type="sumbit"]:disabled{
+    background-color: darkgray;
+    color: gray;
+    border: 1px solid gray;
+}
+#form-example input[type="text"],
+#form-example input[type="password"]{
+    background-color: lavender;
+    border: none;
+    border-bottom: 1px solid darkblue;
+    padding: 7px;
+}
+#form-example input[type="text"]:hover,
+#form-example input[type="password"]:hover{
+    background-color: lavender;
+}
+#link:hover, 
+#link:focus
+{
+    padding: 1px 2px;
+    background-color: rgba(182, 170, 170, 0.315);
+    border: none;
+    border-radius: 5px;
+    color: brown;
+    font-size: 20px;
+}
+#lisk::after{
+    content: "ВАЖНО!";
+    color: crimson;
+}   
+.page-list :hover, 
+.page-list :focus {
+    background-color: blue;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
